@@ -47,7 +47,8 @@ track_lookup_accuracy = []
 total_h = 0
 
 print("parsing gpx file ...")
-doc = minidom.parse("training_routes/strava.activities.3505434868.Afternoon-Ride.gpx")
+#doc = minidom.parse("training_routes/strava.activities.3505434868.Afternoon-Ride.gpx")
+doc = minidom.parse("strava.activities.3505434868.Afternoon-Ride.gpx")
 
 name = doc.getElementsByTagName("name")[0]
 print("Ride title", name.firstChild.data)
